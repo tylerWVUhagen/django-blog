@@ -11,6 +11,11 @@
             <div class="post_body">
                 {{ post.text }}
             </div>
+            <ul class="categories">
+                {% for categor in post.categories.all %}
+                <li>{{ category }}</li>
+                {% endfor %}
+            </ul>
         </div>
     {% endfor %}
 {% endblock %}

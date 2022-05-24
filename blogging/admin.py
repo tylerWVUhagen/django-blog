@@ -15,7 +15,7 @@ class CategoryInline(admin.TabularInline):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    model = Post
+    # model = Post
     inlines = [
         CategoryInline,
     ]

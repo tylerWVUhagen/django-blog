@@ -9,4 +9,9 @@
 <div class="post-body">
     {{ post.text }}
 </div>
+<ul class="categories">
+    {% for category in post.categories.all %}
+    <li>{{ category }}</li>
+    {% endfor %}
+</ul>
 {% endblock %}
